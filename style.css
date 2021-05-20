@@ -9,8 +9,18 @@
 }
 
 @font-face {
+  font-family: PlayfairDisplay-Italic;
+  src: url('fonts/PlayfairDisplay/static/PlayfairDisplay-Italic.ttf');
+}
+
+@font-face {
   font-family: Poppins-Regular;
   src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url('fonts/Poppins/Poppins-Light.ttf');
 }
 
 html {
@@ -28,7 +38,7 @@ header {
   padding-top: 14vh;
 }
 
-.decoration {
+#decoration_main {
   margin: 4vh 0 4vh 0;
   margin-left: calc(50vw - 4.5px);
 }
@@ -88,13 +98,14 @@ header {
 #h_1 {
   font-size: 77px;
   font-family: PlayfairDisplay-Bold;
+  color: #23242C;
 }
 
 #c_h_1 {
   margin-left: 9vw;
 }
 
-#but_1 {
+.but_1 {
   width: 185px;
   height: 61px;
   background-color: #FAFAFA;
@@ -105,14 +116,14 @@ header {
   margin-top: 50px;
 }
 
-#but_1 p {
+.but_1 p {
   font-size: 19px;
   font-family: Poppins-Regular;
   color: #967675;
   margin-top: 18px;
 }
 
-#shadow {
+.shadow {
   height: 9px;
   width: 185px;
   background-color: #964F4C;
@@ -132,24 +143,19 @@ header {
 }
 
 #ellipse_1 {
-  position: absolute;
   width: 31vh;
   height: 31vh;
-  left: calc(36vw + 17vh);
-  top: calc(31vh + 17vh);
+  margin-top: 17vh;
+  margin-left: 17vh;
   border-radius: 100%;
   z-index: -1;
   background: #FDF3EF;
 }
 
 #ellipse_2 {
-  position: absolute;
   width: 65vh;
   height: 65vh;
-  left: 36vw;
-  top: 31vh;
-  opacity: 0.1;
-  border: 1px solid #23242C;
+  border: 1px solid rgba(35, 36, 44, .1);;
   box-sizing: border-box;
   border-radius: 100%;
   z-index: -1;
@@ -177,4 +183,72 @@ header {
   width: calc(100vw / 6);
   height: 3000px;
   border-right: 1px solid #EDEDED;
+}
+
+#list .container {
+  display: flex;
+}
+
+.container {
+  margin-left: 9vw;
+  margin-right: 9vw;
+  margin-top: 90px;
+  width: auto;
+}
+
+.list_item {
+  width: 18vw;
+}
+
+.list_item p {
+  margin-left: 64px;
+  margin-top: 6%;
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #9D8888;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex .decoration {
+  margin-top: 11px;
+}
+
+.flex h3 {
+  font-family: PlayfairDisplay-Italic;
+  font-size: 38px;
+  margin-left: 5%;
+  color: #111111;
+}
+
+#image_title img {
+  width: 591px;
+  height: 458px;
+  border-radius: 15px;
+}
+
+#image_title .but_1 {
+  margin-left: 0;
+}
+
+.motto {
+  margin-left: 5.5vw;
+}
+
+#image_title p {
+  font-family: Poppins-Light;
+  font-size: 16px;
+  color: #967675;
+}
+
+#image_title h2 {
+  font-family: PlayfairDisplay-Bold;
+  font-size: 102px;
+  color: #23242C;
+}
+
+#image_title {
+  margin-top: 173px;
 }
