@@ -31,6 +31,7 @@ header {
   height: 23vh;
   width: 100%;
   border-bottom: 1px solid #EDEDED;
+  background: #fafafa;
 }
 
 #hero_bar {
@@ -39,14 +40,16 @@ header {
 }
 
 #decoration_main {
-  margin: 4vh 0 4vh 0;
-  margin-left: calc(50vw - 4.5px);
+  padding: 4vh 0 4vh 0;
+  padding-left: calc(50vw - 4.5px);
+  background: #fafafa;
 }
 
 .logo {
   font-size: 46px;
   text-align: center;
   font-family: PlayfairDisplay-Regular;
+  margin-bottom: 20px;
 }
 
 .navigation {
@@ -54,17 +57,14 @@ header {
 }
 
 #navbar {
-  margin: 3vh 0 0 27vw;
   padding: 0;
   list-style-type: none;
-}
-#navbar li {
-   display: inline;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #navbar li a {
   text-decoration: none;
-  margin-left: 4vw;
   font-size: 18px;
   color: #23242C;
   font-family: Poppins-Regular;
@@ -76,7 +76,6 @@ header {
   width: 200px;
   height: 28px;
   padding-top: 12px;
-  position: absolute;
 }
 
 .but p {
@@ -85,14 +84,10 @@ header {
 
 #but_kor {
   background-color: #F6ECE8;
-  top: 16vh;
-  left: 5vw;
 }
 
 #but_zak {
   background-color: #F3D1C3;
-  top: 16vh;
-  right: 5vw;
 }
 
 #h_1 {
@@ -159,6 +154,7 @@ header {
   box-sizing: border-box;
   border-radius: 100%;
   z-index: -1;
+  background: #fafafa;
 }
 
 #line_2 {
@@ -251,4 +247,23 @@ header {
 
 #image_title {
   margin-top: 173px;
+}
+
+#stars {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.star {
+  background-color: #3c6073;
+  opacity: .4;
+}
+
+#nav {
+  justify-content: center;
+  align-items: center;
 }

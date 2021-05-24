@@ -11,32 +11,37 @@
 <header>
     <div id="decoration_main" class="decoration">
       <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.3">
-      <circle cx="1.5" cy="1.5" r="1.5" fill="#23242C"/>
-      <circle cx="1.5" cy="7.5" r="1.5" fill="#23242C"/>
-      <circle cx="7.5" cy="1.5" r="1.5" fill="#23242C"/>
-      <circle cx="7.5" cy="7.5" r="1.5" fill="#23242C"/>
-      </g>
+        <g opacity="0.3">
+          <circle cx="1.5" cy="1.5" r="1.5" fill="#23242C"/>
+          <circle cx="1.5" cy="7.5" r="1.5" fill="#23242C"/>
+          <circle cx="7.5" cy="1.5" r="1.5" fill="#23242C"/>
+          <circle cx="7.5" cy="7.5" r="1.5" fill="#23242C"/>
+        </g>
       </svg>
     </div>
     <h1 class="logo">
       HANDMADE
     </h1>
-    <div class="navigation">
-      <ul id="navbar">
-        <li><a href="#">Подарки</a></li>
-        <li><a href="#">Ободки</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Украшения</a></li>
-      </ul>
+    <div class="flex" id="nav">
+      <div id="but_kor" class="but">
+        <p>КОРЗИНА</p>
+      </div>
+
+      <div class="navigation">
+        <ul id="navbar">
+          <li><a href="#">Подарки</a></li>
+          <li><a href="#">Ободки</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Украшения</a></li>
+        </ul>
+      </div>
+
+
+      <div id="but_zak" class="but">
+        <p>СДЕЛАТЬ ЗАКАЗ</p>
+      </div>
     </div>
 
-    <div id="but_kor" class="but">
-      <p>КОРЗИНА</p>
-    </div>
-    <div id="but_zak" class="but">
-      <p>СДЕЛАТЬ ЗАКАЗ</p>
-    </div>
 </header>
 <body>
   <!-- Линии на фоне -->
@@ -55,6 +60,7 @@
       <div class="shadow"></div>
     </div>
     <img id="img_main" src="img/main.jpg" alt="bant">
+    <div id="stars"></div>
     <div style="position: fixed;width: 500px;height: 500px;left: 36vw;top: 31vh;z-index: -1;">
       <div id="ellipse_2"><div id="ellipse_1"></div></div>
     </div>
@@ -130,5 +136,8 @@
       </div>
     </div>
   </section>
+  <script type="text/javascript" src="app.js">
+
+  </script>
 </body>
 </html>
